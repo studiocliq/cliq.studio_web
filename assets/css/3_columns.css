@@ -1,0 +1,48 @@
+/* Common Layout */
+body { font-family: 'Noto Sans KR', sans-serif; margin: 0px; -webkit-font-smoothing: antialiased; }
+
+a { text-decoration: none; }
+
+ul { list-style-type: circle; }
+
+.card { background-color: white; border-radius: 10px; box-shadow: 1px 1px 1px #AAAAAA; padding: 20px 20px; transition: 0.3s; }
+
+.section { margin-bottom: 10px; }
+
+#wrap { background-color: #EEEEEE; overflow-x: hidden; width: 100%; }
+
+.recent_post:hover { box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.section { margin-bottom: 10px; }
+
+/* Contatiner part */
+#container { display: flex; justify-content: space-between; margin: 0 20px; margin-bottom: 20px; }
+
+#img-profile { border-radius: 50%; height: 150px; object-fit: cover; width: 150px; }
+
+.wrap-sns { margin-top: 10px; }
+
+.box_sns { border-radius: 10%; color: black; display: inline-block; font-size: 30px; height: 30px; margin-bottom: 20px; padding: 10px 0; text-align: center; width: 22%; }
+
+.box_sns:hover { background-color: #F76C6C; color: white; }
+
+#content { float: left; margin: 0 15px; width: 50%; }
+
+.recent_post { margin: 0 0 10px 0; padding: 0; }
+
+.recent_post:hover { box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.box-img-title { border-radius: 0.5%; margin-bottom: 20px; }
+
+.img-title { border-radius: 10px 10px 0 0; max-height: 200px; object-fit: cover; object-position: 0 30%; width: 100%; }
+
+.box-title_date { padding: 0 20px 20px 20px; }
+
+.aside { float: left; text-align: center; width: 22%; }
+
+/* Text style */
+#profile h1 { margin-bottom: 0; }
+
+#profile p { margin-top: 10px; }
+
+/*# sourceMappingURL=3_columns.css.map */
