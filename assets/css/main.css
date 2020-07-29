@@ -1,0 +1,37 @@
+/* Common Layout */
+body { font-family: 'Noto Sans KR', sans-serif; margin: 0px; -webkit-font-smoothing: antialiased; }
+
+a { text-decoration: none; }
+
+ul { list-style-type: circle; }
+
+#wrap { background-color: #EEEEEE; overflow-x: hidden; width: 100%; }
+
+.card { background-color: white; border-radius: 10px; box-shadow: 1px 1px 1px #AAAAAA; transition: 0.3s; }
+
+.content { padding: 20px; }
+
+/* Text style */
+.txt-heading { font-weight: 200; margin-top: 0; text-align: left; }
+
+.txt-date { color: #555555; margin: 0; text-indent: 0; }
+
+.txt-gray { color: gray; }
+
+.txt-black { color: #333333; }
+
+.txt-pink { color: #F76C6C; }
+
+.txt-largest { font-size: 30px; }
+
+.txt-large { font-size: 25px; }
+
+.txt-medium { font-size: 20px; }
+
+.txt-small { font-size: 15px; }
+
+.txt-smaller { font-size: 10px; }
+
+.txt-smallest { font-size: 5px; }
+
+/*# sourceMappingURL=main.css.map */

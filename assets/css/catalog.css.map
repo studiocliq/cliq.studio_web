@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "catalog.css",
+	"sources": [
+		"catalog.scss",
+		"_sass/catalog.scss"
+	],
+	"sourcesContent": [
+		"@import \"catalog\"",
+		".txt-catalog {\n  display: block;\n  color: black;\n  padding: 5px 10px;\n  border-radius: 3px;\n}\n\n.txt-catalog:hover {\n  background-color: #EEEEEE;\n}"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,YAAY,CAAC,EACX,OAAO,EAAE,KAAK,EACd,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,QAAQ,EACjB,aAAa,EAAE,GAAG,GACnB;;AAED,AAAA,YAAY,CAAC,KAAK,CAAC,EACjB,gBAAgB,EAAE,OAAO,GAC1B"
+}

@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "footer.css",
+	"sources": [
+		"footer.scss",
+		"_sass/footer.scss"
+	],
+	"sourcesContent": [
+		"@import \"footer\"",
+		"// footer\nfooter {\n  display: block;\n  background-color: white;\n}\n\n.box-footer {\n  padding: 20px 15px;\n}\n\n.footer-service_name {\n  margin: 5px 0;\n}\n\n.list-sitemap {\n  display: flex;\n  list-style: none;\n  padding: 0;\n  margin-top: 0;\n  margin-bottom: 5px;\n}\n\n.list-sitemap li {\n  padding-right: 10px;\n}"
+	],
+	"names": [],
+	"mappings": "ACCA,AAAA,MAAM,CAAC,EACL,OAAO,EAAE,KAAK,EACd,gBAAgB,EAAE,KAAK,GACxB;;AAED,AAAA,WAAW,CAAC,EACV,OAAO,EAAE,SAAS,GACnB;;AAED,AAAA,oBAAoB,CAAC,EACnB,MAAM,EAAE,KAAK,GACd;;AAED,AAAA,aAAa,CAAC,EACZ,OAAO,EAAE,IAAI,EACb,UAAU,EAAE,IAAI,EAChB,OAAO,EAAE,CAAC,EACV,UAAU,EAAE,CAAC,EACb,aAAa,EAAE,GAAG,GACnB;;AAED,AAAA,aAAa,CAAC,EAAE,CAAC,EACf,aAAa,EAAE,IAAI,GACpB"
+}
