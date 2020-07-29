@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"catalog\"",
-		".txt-catalog {\n  display: block;\n  color: black;\n  padding: 5px 10px;\n  border-radius: 3px;\n}\n\n.txt-catalog:hover {\n  background-color: #EEEEEE;\n}"
+		"$color-headings: #333333;\n\n.txt-catalog {\n  display: block;\n  color: black;\n  padding: 3px 5px;\n  border-radius: 3px;\n}\n\nh3 {\n  color: $color-headings;\n  margin-top: 0;\n}\n\n.txt-catalog:hover {\n  background-color: #EEEEEE;\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,YAAY,CAAC,EACX,OAAO,EAAE,KAAK,EACd,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,QAAQ,EACjB,aAAa,EAAE,GAAG,GACnB;;AAED,AAAA,YAAY,CAAC,KAAK,CAAC,EACjB,gBAAgB,EAAE,OAAO,GAC1B"
+	"mappings": "ACEA,AAAA,YAAY,CAAC,EACX,OAAO,EAAE,KAAK,EACd,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,OAAO,EAChB,aAAa,EAAE,GAAG,GACnB;;AAED,AAAA,EAAE,CAAC,EACD,KAAK,EAVU,OAAO,EAWtB,UAAU,EAAE,CAAC,GACd;;AAED,AAAA,YAAY,CAAC,KAAK,CAAC,EACjB,gBAAgB,EAAE,OAAO,GAC1B"
 }

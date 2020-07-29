@@ -14,8 +14,6 @@ ul { list-style-type: circle; }
 /* Text style */
 .txt-heading { font-weight: 200; margin-top: 0; text-align: left; }
 
-.txt-date { color: #555555; margin: 0; text-indent: 0; }
-
 .txt-gray { color: gray; }
 
 .txt-black { color: #333333; }

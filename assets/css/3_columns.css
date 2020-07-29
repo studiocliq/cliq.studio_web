@@ -1,22 +1,13 @@
-/* Common Layout */
-body { font-family: 'Noto Sans KR', sans-serif; margin: 0px; -webkit-font-smoothing: antialiased; }
-
-a { text-decoration: none; }
-
-ul { list-style-type: circle; }
-
-.section { margin-bottom: 10px; }
-
-#wrap { background-color: #EEEEEE; overflow-x: hidden; width: 100%; }
-
 .recent_post:hover { box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
-
-.section { margin-bottom: 10px; }
 
 /* Contatiner part */
 #container { display: flex; justify-content: space-between; margin: 0 20px; margin-bottom: 20px; }
 
 #img-profile { border-radius: 50%; height: 150px; object-fit: cover; width: 150px; }
+
+.btn-email { width: 100%; border: 0; background-color: #F76C6C; color: white; border-radius: 5px; height: 1.5em; padding: 5px; outline: none; margin-bottom: 10px; font-size: 25px; }
+
+.btn-email:hover { background-color: #FF4C6C; }
 
 .wrap-sns { margin-top: 10px; }
 
@@ -42,5 +33,9 @@ ul { list-style-type: circle; }
 #profile h1 { margin-bottom: 0; }
 
 #profile p { margin-top: 10px; }
+
+h2 { color: #F76C6C; font-weight: bold; }
+
+time { color: #777777; }
 
 /*# sourceMappingURL=3_columns.css.map */
