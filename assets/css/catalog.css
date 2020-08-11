@@ -1,7 +1,15 @@
-.txt-catalog { display: block; color: black; padding: 3px 5px; border-radius: 3px; }
+h4 { color: #333333; margin-top: 0; }
 
-h3 { color: #333333; margin-top: 0; }
+.txt-catalog { display: block; color: #333333; font-size: 15px; border-radius: 3px; padding: 0.5em; margin-left: 0.5em; }
 
 .txt-catalog:hover { background-color: #EEEEEE; }
+
+.list-catalog { list-style-type: none; padding: 0.1em 0; }
+
+.list-catalog-h3 { border-left: solid #EEEEEE 1px; margin-left: 1em; }
+
+.txt-catalog:hover { background-color: #EEEEEE; }
+
+#box-catalog { position: -webkit-sticky; position: sticky; top: 20px; }
 
 /*# sourceMappingURL=catalog.css.map */

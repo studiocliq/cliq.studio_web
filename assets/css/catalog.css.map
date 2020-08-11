@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"catalog\"",
-		"$color-headings: #333333;\n\n.txt-catalog {\n  display: block;\n  color: black;\n  padding: 3px 5px;\n  border-radius: 3px;\n}\n\nh3 {\n  color: $color-headings;\n  margin-top: 0;\n}\n\n.txt-catalog:hover {\n  background-color: #EEEEEE;\n}"
+		"$color-headings: #333333;\n$color-gray: #EEEEEE;\n\nh4 {\n  color: $color-headings;\n  margin-top: 0;\n}\n\n.txt-catalog {\n  display: block;\n  color: $color-headings;\n  font-size: 15px;\n  border-radius: 3px;\n  padding: 0.5em;\n  margin-left: 0.5em;\n}\n\n.txt-catalog:hover {\n  background-color: $color-gray;\n}\n\n.list-catalog {\n  list-style-type: none;\n  padding: 0.1em 0;\n}\n\n.list-catalog-h3 {\n  border-left: solid $color-gray 1px;\n  margin-left: 1em;\n}\n\n.txt-catalog:hover {\n  background-color: $color-gray;\n}\n\n#box-catalog {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 20px;\n}"
 	],
 	"names": [],
-	"mappings": "ACEA,AAAA,YAAY,CAAC,EACX,OAAO,EAAE,KAAK,EACd,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,OAAO,EAChB,aAAa,EAAE,GAAG,GACnB;;AAED,AAAA,EAAE,CAAC,EACD,KAAK,EAVU,OAAO,EAWtB,UAAU,EAAE,CAAC,GACd;;AAED,AAAA,YAAY,CAAC,KAAK,CAAC,EACjB,gBAAgB,EAAE,OAAO,GAC1B"
+	"mappings": "ACGA,AAAA,EAAE,CAAC,EACD,KAAK,EAJU,OAAO,EAKtB,UAAU,EAAE,CAAC,GACd;;AAED,AAAA,YAAY,CAAC,EACX,OAAO,EAAE,KAAK,EACd,KAAK,EAVU,OAAO,EAWtB,SAAS,EAAE,IAAI,EACf,aAAa,EAAE,GAAG,EAClB,OAAO,EAAE,KAAK,EACd,WAAW,EAAE,KAAK,GACnB;;AAED,AAAA,YAAY,CAAC,KAAK,CAAC,EACjB,gBAAgB,EAjBL,OAAO,GAkBnB;;AAED,AAAA,aAAa,CAAC,EACZ,eAAe,EAAE,IAAI,EACrB,OAAO,EAAE,OAAO,GACjB;;AAED,AAAA,gBAAgB,CAAC,EACf,WAAW,EAAE,KAAK,CA1BP,OAAO,CA0Ba,GAAG,EAClC,WAAW,EAAE,GAAG,GACjB;;AAED,AAAA,YAAY,CAAC,KAAK,CAAC,EACjB,gBAAgB,EA/BL,OAAO,GAgCnB;;AAED,AAAA,YAAY,CAAC,EACX,QAAQ,EAAE,cAAc,EACxB,QAAQ,EAAE,MAAM,EAChB,GAAG,EAAE,IAAI,GACV"
 }

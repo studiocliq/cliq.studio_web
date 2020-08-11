@@ -121,32 +121,43 @@
         </div>
 
         <div class="aside">
-          <div class="content card">
-              <div id=box-catalog>
-  <h3>Catalogue</h3>
+          <div class="content card" id="box-catalog">
+  <h4>Catalogue</h4>
 
   <script type="text/javascript">
-    indexList = document.getElementsByTagName('h2');
+    indexList = document.querySelectorAll('h2, h3');
+    console.log(indexList);
+    console.log(indexList.length);
+    
+    for(let i = 0; i < indexList.length; i++) {
+      console.log(i)
+      var listElement = document.createElement('li')
+      listElement.className = 'list-catalog'
 
-    for(let i=0; i<indexList.length; i++) {
       var heading = indexList[i];
       var catalogId = i.toString();
       
+      //Create link
       heading.id = catalogId;
       catalogId = '#' + catalogId;
 
+      //Add link element in list
       var catalogHTML = document.createElement('a')
       catalogHTML.href = catalogId;
       catalogHTML.innerHTML = heading.innerHTML;
-      catalogHTML.className += 'txt-catalog'
+      catalogHTML.classList.add('txt-catalog')
+
+      listElement.appendChild(catalogHTML);
+
+      if(heading.tagName == 'H3') {
+        listElement.classList.add('list-catalog-h3')
+      }
 
       var catalogBox = document.getElementById('box-catalog');
-      catalogBox.appendChild(catalogHTML);
+      catalogBox.appendChild(listElement);
     }
   </script>
 </div>
-
-          </div>
         </div>
       </div>
       <footer>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html style= "scroll-behavior: smooth;">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162715998-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-162715998-1');
+    </script>
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Jekyll을 이용한 포스팅 프로세스 간소화(1)</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Jekyll을 이용한 포스팅 프로세스 간소화(1)" />
+<meta name="author" content="cliq" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="레이아웃을 이용한 웹페이지 만들기 포스팅에서는 ‘레이아웃’이라는 단어를 ‘웹페이지의 기능별 구획’의 의미로 사용하였지만, 이번 포스팅에서는 ‘웹페이지 테마, 혹은 양식’으로 사용하였습니다. 작문 실력이 부족하여 혼동을 드려 죄송합니다." />
+<meta property="og:description" content="레이아웃을 이용한 웹페이지 만들기 포스팅에서는 ‘레이아웃’이라는 단어를 ‘웹페이지의 기능별 구획’의 의미로 사용하였지만, 이번 포스팅에서는 ‘웹페이지 테마, 혹은 양식’으로 사용하였습니다. 작문 실력이 부족하여 혼동을 드려 죄송합니다." />
+<link rel="canonical" href="http://localhost:4000/2020/08/11/jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%8F%AC%EC%8A%A4%ED%8C%85-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EA%B0%84%EC%86%8C%ED%99%94(1).html" />
+<meta property="og:url" content="http://localhost:4000/2020/08/11/jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%8F%AC%EC%8A%A4%ED%8C%85-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EA%B0%84%EC%86%8C%ED%99%94(1).html" />
+<meta property="og:image" content="http://localhost:4000/assets/images/jekyll_1/time_is_money.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-11T00:00:00+09:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/08/11/jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%8F%AC%EC%8A%A4%ED%8C%85-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EA%B0%84%EC%86%8C%ED%99%94(1).html"},"@type":"BlogPosting","url":"http://localhost:4000/2020/08/11/jekyll%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%8F%AC%EC%8A%A4%ED%8C%85-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EA%B0%84%EC%86%8C%ED%99%94(1).html","headline":"Jekyll을 이용한 포스팅 프로세스 간소화(1)","dateModified":"2020-08-11T00:00:00+09:00","datePublished":"2020-08-11T00:00:00+09:00","image":"http://localhost:4000/assets/images/jekyll_1/time_is_money.jpg","author":{"@type":"Person","name":"cliq"},"description":"레이아웃을 이용한 웹페이지 만들기 포스팅에서는 ‘레이아웃’이라는 단어를 ‘웹페이지의 기능별 구획’의 의미로 사용하였지만, 이번 포스팅에서는 ‘웹페이지 테마, 혹은 양식’으로 사용하였습니다. 작문 실력이 부족하여 혼동을 드려 죄송합니다.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta charset="utf-8">
+    <title>Jekyll을 이용한 포스팅 프로세스 간소화(1)</title>
+    <link rel="stylesheet" href="/assets/css/highlightjs/styles/dark.css">
+    <script src="/assets/css/highlightjs/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="/assets/css/navigation.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/post.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/catalog.css">
+
+    <script src="https://kit.fontawesome.com/c3878cbb20.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id=wrap>
+      <nav id=header>
+  <div class="top_title">
+    <a href="/" class="txt-black">CliQ.studio</a>
+  </div>
+  <ul id="gnb">
+    
+      <li>
+        <a href="/" class="txt-black txt-small" >
+          Home
+        </a>
+      </li>
+    
+      <li>
+        <a href="/about.html" class="txt-black txt-small" >
+          About
+        </a>
+      </li>
+    
+      <li>
+        <a href="/dev.html" class="txt-black txt-small" >
+          Dev
+        </a>
+      </li>
+    
+      <li>
+        <a href="/work.html" class="txt-black txt-small" >
+          Work
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+      <div id=container>
+        <div id=content class="card">
+          <div class="box-img-title">
+            <img src=" /assets/images/jekyll_1/time_is_money.jpg " alt=" Jekyll을 이용한 포스팅 프로세스 간소화(1) " class="img-title">
+          </div>
+          <div class="content">
+            <h1>Jekyll을 이용한 포스팅 프로세스 간소화(1)</h1>
+            <time><i class="far fa-clock"></i>2020.08.11</time>
+            <p><a href="https://cliq.studio/2020/06/06/%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0.html">레이아웃을 이용한 웹페이지 만들기</a> 포스팅에서는 ‘레이아웃’이라는 단어를 ‘웹페이지의 기능별 구획’의 의미로 사용하였지만, 이번 포스팅에서는 <strong>‘웹페이지 테마, 혹은 양식’</strong>으로 사용하였습니다. 작문 실력이 부족하여 혼동을 드려 죄송합니다.</p>
+
+<p>앞선 포스팅에 이어서, 원래는 AWS를 이용하여 서버를 만들고 이를 도메인과 연결하는 포스팅을 작성하려 했지만, 새롭게 알게된 <strong>Jekyll</strong>이라는 프로그램을 통해 블로그에 글을 쓰는 과정을 간소화할 수 있었기 때문에, 내용의 흐름상 이 포스팅을 먼저 하기로 했다.</p>
+
+<p>이 포스팅에서는 Jekyll에 사용되는 언어에 대해 자세하게 다루지 않는다. 다만, 필자처럼 Jekyll에 익숙하지 않은 분들께 조금이나마 도움이 될 수 있도록 잠깐 훑어보는 정도의 개념 정리와 필자의 경험 위주로 작성하였다. 필자의 주관적인 생각을 제외한 Jekyll의 개념과 관련된 모든 항목들은 <a href="https://jekyllrb.com/docs/">공식 문서</a>를 참고하였다.</p>
+
+<h2 id="같은-일을-5번-이상-반복하면-자동화를-고려해보자">같은 일을 5번 이상 반복하면, 자동화를 고려해보자</h2>
+<p>기존에 포스팅을 업로드하는 과정은 너무나도 노동 집약적인 프로세스였다.</p>
+<ol>
+  <li>Notion에서 블로그에 업로드할 원고를 작성</li>
+  <li>원고의 각 항목을 Heading, link, paragraph 등으로 분류하여 html tag로 작성</li>
+  <li>페이지에서 마음에 안드는 부분 혹은 스타일 오류가 발생하면 코드를 수정</li>
+  <li>수정된 내용을 기존 <strong>모든 페이지마다 수정</strong></li>
+  <li>글이 마음에 안들면 다시 HTML 파일에서 수정</li>
+  <li>서버에 업로드</li>
+  <li>업로드 후 마음에 안들면 다시 HTML 문서에서 수정</li>
+  <li>서버에 재업로드</li>
+</ol>
+
+<p>글을 쓰는 작업이 익숙하지 않다보니 원고를 수정하는 작업은 어느정도 감안할 수 있었지만, 완성되지 않았던 디자인 때문에 CSS 스타일을 수정하는 빈도가 너무 잦았다. 또한 수정한 디자인을 수동으로 모든 페이지에서 바꿔주어야 했기 때문에, 한 번 수정할 때마다 많은 시간이 소요되었고, 코드가 점점 복잡해져 모든 페이지에서 동일한 레이아웃을 유지하는게 힘들어졌다. 따라서, 하나의 페이지에서 레이아웃을 수정하면 모든 페이지에 동일하게 변경된 수정사항을 적용하는 시스템이 필요했다.</p>
+
+<p>나에게는 기존 형식을 유지하면서 유지하는데 드는 노력을 줄일 아이디어가 필요했고, 잠깐의 검색 후에 <a href="https://jekyllrb.com/">Jekyll</a>을 찾았다. 사실 Jekyll이라는 프로그램은 블로그를 시작하기 전에 몇몇 포스팅에서 봤던 기억이 있지만, 그땐 ‘블로그를 만든다’는 생각에 빠져서, 자세히 찾아보는 노력이 부족했다.(멍청비용 냈다..) Jekyll 홈페이지에서 ‘Getting Started’ 문서 정도만 훑어보고 바로 적용하기로 했다.</p>
+
+<h2 id="jekyll은-사랑입니다">Jekyll은 사랑입니다.</h2>
+<p>Jekyll은 markdown 언어를 이용하여 정적인 웹페이지를 생성할 수 있는 <strong>웹페이지 생성기</strong>이다. 미리 레이아웃을 만들면, 같은 형식의 여러 페이지를 만들 수  있다. 특히 레이아웃을 수정하면, 모든 페이지에 동일하게 수정사항을 반영할 수 있다는 점이 가장 매력적이다. 이밖에도 호스팅, 커밋 트리거를 통한 자동 배포 등 많은 기능을 추가적으로 제공하지만, 필자는 일단, 가장 필요했단 레이아웃 기능부터 적용하기로 했다.</p>
+
+<h3 id="install">Install</h3>
+<p>Jekyll은 Ruby라는 언어로 프로그래밍되어 있기 때문에 먼저 Ruby 개발 환경을 세팅하고 Jekyll을 설치한다. 각각의 운영체제마다 다른 방법으로 설치해야하며, 필자는 리눅스 우분투를 사용중이기 때문에 해당 <a href="https://jekyllrb.com/docs/installation/">가이드</a>를 참고하여 설치하였다.</p>
+
+<h3 id="프로젝트-디렉토리-설정">프로젝트 디렉토리 설정</h3>
+<p>설치 후, 웹사이트를 만들 프로젝트 디렉토리(root)를 하나 생성하고, 해당 디렉토리로 이동하여 다음 명령어를 입력하면, <strong>Gemfile</strong>이라는 파일이 생성된다.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle init
+</code></pre></div></div>
+<p>Gemfile은 npm의 package.json 파일처럼, 프로젝트에 필요한 <strong>라이브러리를 관리</strong>하는 파일이다. Gemfile을 열어서 다음 코드를 추가하자.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">gem "jekyll"</span>
+</code></pre></div></div>
+<p>수정 사항을 저장한 후, 터미널에서 <strong>bundle exec</strong>을 입력하면, jekyll이 프로젝트 디렉토리 내에 설치된다. 설치가 완료된 후, 터미널에서 다음 코드를 실행하면, 변경사항을 자동으로 반영하는 jekyll 로컬 서버가 실행된다.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve
+</code></pre></div></div>
+<p>실행된 서버는 “http://localhost:4000” 으로 접속 가능하다. 혹은 bash 터미널처럼 cli 환경에서 사용하고자 한다면 <strong>jekyll serve -P [port]</strong> 로 포트 번호를 지정하여 로컬 서버를 실행할 수 있다. <strong>jekyll serve -t</strong> 명령을 이용하면, 코드 에러로 인한 오류 메세지를 보다 상세하게 출력해주니 유용하게 이용하자.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>base<span class="o">)</span> cliq@cliq:~/root<span class="nv">$ </span>jekyll serve <span class="nt">-t</span>
+Configuration file: ~/root/_config.yml
+            Source: ~/root
+       Destination: ~/root/_site
+ Incremental build: disabled. Enable with <span class="nt">--incremental</span>
+      Generating... 
+       Jekyll Feed: Generating feed <span class="k">for </span>posts
+                    <span class="k">done in </span>0.455 seconds.
+ Auto-regeneration: enabled <span class="k">for</span> <span class="s1">'~/root'</span>
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
+</code></pre></div></div>
+<p><em>서버 실행 후 로그</em></p>
+
+<p>로컬 서버까지 실행하면, 해당 서버에서 html 문서를 볼 수 있다. 간단하게 테스트용 index.html 파일을 프로젝트 디렉토리 안에 넣고 서버에 접속해보자.</p>
+
+<h2 id="jekyll의-주요-도구">Jekyll의 주요 도구</h2>
+<p>앞서 Jekyll은 정적인 웹페이지를 생성할 수 있는 <strong>웹페이지 생성기</strong>라고 했다. 정적 페이지를 생성하기 위해서, Jekyll에서는 Liquid를 통해 템플릿을 만들고, front matter를 통해 각 페이지에 필요한 변수를 정의한다.</p>
+
+<h3 id="liquid">Liquid</h3>
+<p>Liquid는 Ruby로 프로그래밍된 <strong>템플릿 언어</strong>로, 만들어놓은 레이아웃에 Liquid 문법을 이용하여 블로그 포스트처럼 형식이 비슷한 여러개의 html 페이지를 생성한다. Liquid는 세가지 요소(object, tag, filter)로 구성된다.</p>
+
+<h4 id="object">Object</h4>
+<p>Object는 컨텐츠가 렌더링될 부분을 지정하는 역할을 한다. Double curly braces({{, }})를 통해 표현한다. 아래 코드가 위치한 부분에 페이지의 title 변수가 렌더링된다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ page.title }}
+</code></pre></div></div>
+
+<h4 id="tags">Tags</h4>
+<p>템플릿을 위한 산술, 논리 연산을 생성한다. {%, %} 로 사용한다. 일반적인 프로그래밍 언어의 조건, 제어문과 같은 역할을 수행한다. 아래 코드에서 page.show_sidebar가 참이면 div element를 출력한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if page.show_sidebar %}
+  &lt;div class = "sidebar"&gt;
+    sidebar content
+  &lt;/div&gt;
+{% endif %}
+</code></pre></div></div>
+
+<h4 id="filters">Filters</h4>
+<p>Liquid Object의 결과물을 바꿔준다. “|” 로 사용한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ "hi" | capitalize }}
+</code></pre></div></div>
+
+<p>결과물은 <strong>Hi</strong>이다.</p>
+<h3 id="front-matter">Front matter</h3>
+<p>코드 파일의 최상단에 Front matter가 존재해야 Jekyll에서 liquid 문법을 인식하고 실행할 수 있다. Liquid 문법이 사용된 파일의 최상단에 두 개의 Triple dash(‘—‘)을 삽입하면 된다. Front matter는 주로 해당 페이지에서 사용되는 <strong>변수를 선언</strong>할 때 사용된다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+my_number: 5
+---
+</code></pre></div></div>
+<p><em>my_number 라는 변수를 선언</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{{ page.my_number }}
+
+</code></pre></div></div>
+<p><em>Front matter 안에 선언된 변수들은 Liquid에서 page 라는 변수를 통해 접근 가능하다.</em></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>{{ page.title }}<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">wrap</span><span class="nt">&gt;</span>
+      {{ page.my_number }}
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p><em>html이나 markdown에서는 이와 같이 사용하면 된다.</em></p>
+
+<h2 id="프로젝트-디렉토리-구조">프로젝트 디렉토리 구조</h2>
+
+<p>Jekyll의 <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">Step by Step Tutorial</a>을 진행하면 마지막에는 다음과 같은 구조를 이루게 된다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root/
+├── assets/
+├── _data/
+├── _includes/
+├── _layouts/
+├── _posts/
+├── _sass/
+└── _site/
+</code></pre></div></div>
+
+<h4 id="assets">assets</h4>
+<p>CSS, image, javascript 등 파일이나 외부 라이브러리를 보관하는 디렉토리.</p>
+
+<h4 id="_data">_data</h4>
+<p>YAML, JSON, CSV 등 데이터 보관용 디렉토리. liquid를 이용하여 데이터를 불러온다.</p>
+
+<h4 id="_includes">_includes</h4>
+<p>가독성과 유지보수를 위해 모든 사이트에서 반복되는 요소를 분리하여 저장하는 디렉토리. liquid에서는 Include 태그를 이용하여 미리 정의해놓은 요소들을 사용한다. 필자는 웹 페이지 상단의 navigation bar 와 footer를 따로 분리하고, 포스팅의 오른쪽에 위치한 catalogue를 _includes 디렉토리에 따로 분리하였다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">wrap</span><span class="nt">&gt;</span>
+    {% include navigation.html %}
+    {{ content }}
+    {% include footer.html %}
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre></div></div>
+
+<p><em>html 코드 안에서 include 태그를 사용하여, _includes 디렉토리 안에 미리 정의한 요소를 사용한다.</em></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">box-catalog</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Catalogue<span class="nt">&lt;/h3&gt;</span>
+
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nx">indexList</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">'</span><span class="s1">h2</span><span class="dl">'</span><span class="p">);</span>
+
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">indexList</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">heading</span> <span class="o">=</span> <span class="nx">indexList</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+      <span class="kd">var</span> <span class="nx">catalogId</span> <span class="o">=</span> <span class="nx">i</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span>
+      
+      <span class="nx">heading</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="nx">catalogId</span><span class="p">;</span>
+      <span class="nx">catalogId</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">#</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">catalogId</span><span class="p">;</span>
+
+      <span class="kd">var</span> <span class="nx">catalogHTML</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">)</span>
+      <span class="nx">catalogHTML</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">catalogId</span><span class="p">;</span>
+      <span class="nx">catalogHTML</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">heading</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">;</span>
+      <span class="nx">catalogHTML</span><span class="p">.</span><span class="nx">className</span> <span class="o">+=</span> <span class="dl">'</span><span class="s1">txt-catalog</span><span class="dl">'</span>
+
+      <span class="kd">var</span> <span class="nx">catalogBox</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">box-catalog</span><span class="dl">'</span><span class="p">);</span>
+      <span class="nx">catalogBox</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">catalogHTML</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p><em>_includes 디렉토리 안의 파일 예시, 위의 코드는 웹페이지 오른쪽의 카탈로그 코드</em></p>
+
+<h4 id="_layouts">_layouts</h4>
+<p>코드 중복을 막기 위해 공통적으로 적용되는 Stylesheet나 Javascript를 레이아웃화하여 공통적으로 적용한다. 기존 웹사이트에서는 수정 사항이 발생하면 모든 html 코드를 수정해야했으나, 레이아웃을 통해 한 번의 수정만으로 모든 페이지의 내용을 수정할 수 있다. Jekyll에서 <strong>필자가 가장 사랑하는 기능</strong>이다.</p>
+
+<blockquote>
+  <p>Let’s say you wanted to add a stylesheet to your site, you would have to go to each page and add it to the &lt;head&gt;. It might not sound so bad for a two page site, imagine doing it for 100 pages. Even simple changes will take a long time to make.</p>
+</blockquote>
+
+<p><em>읽으면서 가장 공감했던 말</em></p>
+
+<h4 id="_posts">_posts</h4>
+<p>각각의 포스트에 대한 Markdown 파일이 위치한 곳. 날짜-제목.md 형식으로 파일을 만들면, liquid를 통해 날짜와, 제목을 각각 page.date, page.title로 사용할 수 있다. (ex) 2020-08-08-Jekyll을 이용한 포스팅 간소화(1).md)</p>
+<h4 id="_sass">_sass</h4>
+<p>스타일을 위한 sass 파일이 위치하는 디렉토리</p>
+<h4 id="_site">_site</h4>
+<p>위에 존재하는 모든 이미지, 데이터, 문서, html, javascript, css 등을 이용하여 jekyll에 의해 생성된 페이지들이 위치하는 디렉토리이다. 결과적으로 이 디렉토리 내의 파일을 서버에 업로드하면, 페이지를 배포할 수 있다. jekyll에 의해 자동적으로 생성되므로, 사용자가 특별하게 수정할 일은 없다.</p>
+
+<h2 id="깃헙-연동">깃헙 연동</h2>
+
+<p>해당 프로젝트 디렉토리(root)에서 필자는 2개의 깃 레포지토리를 생성하고, 깃헙과 연동했다. 하나는 Jekyll 프로젝트 디렉토리이고, 다른 하나는 서버 업로드용 _site 디렉토리이다.</p>
+
+<h3 id="jekyll-프로젝트-디렉토리-root">Jekyll 프로젝트 디렉토리 (root)</h3>
+
+<p>해당 디렉토리는 필자가 코드를 수정하면서 버전 관리를 위한 디렉토리이다. 전체 프로젝트 디렉토리와 하위 디렉토리를 모두 깃 레포지토리로 사용하면, 프로젝트 디렉토리 안의 _site 디렉토리가 중복으로 등록되므로, _site 디렉토리를 트래킹하지 않기 위해 <strong>.gitignore</strong> 파일에 _site 디렉토리를 등록한다. 캐시 파일을 보관하는 디렉토리인 .jekyll-cache 디렉토리도 추가한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_site/
+.jekyll-cache/
+</code></pre></div></div>
+
+<h3 id="서버-업로드용-디렉토리-_site">서버 업로드용 디렉토리 (_site)</h3>
+
+<p>해당 디렉토리를 깃헙과 연동하여, 따로 파일들을 각각 업로드할 필요없이 <strong>git pull</strong> 커맨드를 이용하여 쉽게 업로드할 수 있게 바꿨다. 필자는 AWS EC2 서버를 사용 중이라서 해당 서버에 apache 서버를 설치하고 직접 호스팅을 하고 있지만,  깃헙이나 <a href="https://www.netlify.com/">netflify</a>에서 무료 호스팅을 제공하고 있으니, 빠르게 배포하고 싶다면 무료 호스팅 서비스를 이용하여 웹페이지를 개시하는 것을 추천한다.</p>
+
+<h2 id="마치며">마치며</h2>
+
+<p>작업하면서, ‘처음에 블로그를 만들 때 Jekyll을 알았다면, 훨씬 수월하지 않았을까?’라 생각했지만, 아마 그랬다면 시작조자 못하지 않았을까. 이어지는 포스팅에서는 Jekyll을 이용하여, footer, navigation bar 등 웹사이트에서 사용되는 공통 요소들을 패키징하는 과정에 대해 설명하려한다.</p>
+
+          </div>
+        </div>
+
+        <div class="aside">
+          <div class="content card" id="box-catalog">
+  <h4>Catalogue</h4>
+
+  <script type="text/javascript">
+    indexList = document.querySelectorAll('h2, h3');
+    console.log(indexList);
+    console.log(indexList.length);
+    
+    for(let i = 0; i < indexList.length; i++) {
+      console.log(i)
+      var listElement = document.createElement('li')
+      listElement.className = 'list-catalog'
+
+      var heading = indexList[i];
+      var catalogId = i.toString();
+      
+      //Create link
+      heading.id = catalogId;
+      catalogId = '#' + catalogId;
+
+      //Add link element in list
+      var catalogHTML = document.createElement('a')
+      catalogHTML.href = catalogId;
+      catalogHTML.innerHTML = heading.innerHTML;
+      catalogHTML.classList.add('txt-catalog')
+
+      listElement.appendChild(catalogHTML);
+
+      if(heading.tagName == 'H3') {
+        listElement.classList.add('list-catalog-h3')
+      }
+
+      var catalogBox = document.getElementById('box-catalog');
+      catalogBox.appendChild(listElement);
+    }
+  </script>
+</div>
+        </div>
+      </div>
+      <footer>
+  <div class="box-footer">
+    <div class="footer-service_name">
+      <a href="/" class="txt-pink txt-small">Studio CliQ</a>
+    </div>
+    <ul class="list-sitemap">
+      
+        <li><a href="/" class="txt-smaller txt-black">Home</a></li>
+      
+        <li><a href="/about.html" class="txt-smaller txt-black">About</a></li>
+      
+        <li><a href="/dev.html" class="txt-smaller txt-black">Dev</a></li>
+      
+        <li><a href="/work.html" class="txt-smaller txt-black">Work</a></li>
+      
+    </ul>
+    <p class="txt-smaller">COPYRIGHT STUDIO CLIQ, ALL RIGHT RESERVED</p>
+  </div>
+</footer>
+    </div>
+  </body>
+</html>
