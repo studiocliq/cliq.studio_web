@@ -7,7 +7,7 @@ ul { list-style-type: circle; }
 
 #wrap { background-color: #EEEEEE; width: 100%; }
 
-.card { background-color: white; border-radius: 10px; box-shadow: 1px 1px 1px #AAAAAA; transition: 0.3s; }
+.card { background-color: white; border-radius: 10px; box-shadow: 10px 10px 10px #AAAAAA; transition: 0.3s; }
 
 .content { padding: 20px; }
 
