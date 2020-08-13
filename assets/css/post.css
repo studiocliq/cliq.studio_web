@@ -1,9 +1,11 @@
-#content { float: left; padding: 0; width: 68%; }
+@media screen and (max-width: 1024px) { #container { flex-direction: column; } #content { width: 100%; } .aside { width: 100%; } }
+
+@media screen and (min-width: 1025px) { #container { flex-direction: row; } #content { width: 68%; } .aside { float: right; width: 30%; } }
+
+#content { float: left; padding: 0; }
 
 /* Contatiner part */
 #container { display: flex; justify-content: space-between; margin: 0 10px; margin-bottom: 20px; }
-
-.aside { float: right; width: 30%; }
 
 .box-img-title { margin-bottom: 20px; }
 
@@ -30,9 +32,9 @@
 
 #content h4 { margin-top: 2em; color: #333333; font-size: 15px; }
 
-#content p { color: #444954; font-size: 17px; font-weight: 400; line-height: 2em; text-indent: 1em; margin-block-end: 1.5em; }
+#content p { color: #444954; font-size: 17px; font-weight: 400; line-height: 1.8; text-indent: 1em; margin-block-end: 2em; }
 
-#content li { color: #444954; font-size: 17px; font-weight: 400; line-height: 1.8em; }
+#content li { color: #444954; font-size: 17px; font-weight: 400; line-height: 1.8; }
 
 #content p a { color: #F76C6C; }
 
@@ -45,5 +47,7 @@
 .far { padding-right: 0.5em; }
 
 p em { display: block; color: #777777; text-align: center; font-style: normal; }
+
+code { font-size: 17px; }
 
 /*# sourceMappingURL=post.css.map */
